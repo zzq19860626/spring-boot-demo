@@ -54,15 +54,15 @@
 
 #### 3、远程调用
 
-  远程调用使用feign ，按照demo样例，调用着引入client 和 common 两个jar ，初始化client就可以直接访问。初始化client如下：
+  远程调用使用feign ，按照demo样例，调用者引入client 和 common 两个jar ，初始化client就可以直接访问。初始化client如下：
 
-  @Beanpublic UserClient userClient(){   return new UserClient(propertiesConfiguration.getUserClientUrl());}
+  @Bean
+  public UserClient userClient(){   return new UserClient(propertiesConfiguration.getUserClientUrl());}
 
 #### 4、swagger调用
 
   启动项目后，访问地址http://localhost:8080/swagger-ui.html 即可。注意，如果需要swagger显示类型及参数的详细值，需要在实体类添加注解，如下：
 
-  ``` 
     @Data@ApiModel("用户实体类")
 
     public class User {    
