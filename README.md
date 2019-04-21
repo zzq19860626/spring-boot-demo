@@ -60,7 +60,7 @@
 
 #### 4、swagger调用
 
-  启动项目后，访问地址http://localhost:8080/swagger-ui.html即可。注意，如果需要swagger显示类型及参数的详细值，需要在实体类添加注解，如下：
+  启动项目后，访问地址http://localhost:8080/swagger-ui.html 即可。注意，如果需要swagger显示类型及参数的详细值，需要在实体类添加注解，如下：
 
   ``` 
     @Data@ApiModel("用户实体类")
