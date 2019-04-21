@@ -47,8 +47,7 @@
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>retrofit</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <version>2.5.0</version>
         </dependency>
     </dependencies>
     <!-- 设置deploy的地址 -->
