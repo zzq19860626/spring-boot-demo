@@ -1,10 +1,10 @@
-#demo项目
+# demo项目
 
-##一、概述
+## 一、概述
 
  本项目利用springboot 构建一个项目框架，作为项目构建基础，方便快速搭建一个项目，集成了项目基本的插件，如springBoot，myBatis，logback，lombok，feign，swagger，apache-DBCP等。
 
-##二、项目结构
+## 二、项目结构
 
 |—common     包含提供给外部调用的领域类
 
@@ -34,13 +34,13 @@
 
         |—ServerApplication  启动类
 
-##三、项目使用
+## 三、项目使用
 
-####1、项目启动
+#### 1、项目启动
 
   默认8080端口，直接用启动类run。如需修改端口，在idea springboot的启动类Enviroment展开下面的VM options中配置-Dserver.port=8090，这样端口就修改城类8090
 
-####2、数据库配置
+#### 2、数据库配置
 
   默认所有的配置都在application.properties中：
 
@@ -52,13 +52,13 @@
 
   spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
-####3、远程调用
+#### 3、远程调用
 
   远程调用使用feign ，按照demo样例，调用着引入client 和 common 两个jar ，初始化client就可以直接访问。初始化client如下：
 
   @Beanpublic UserClient userClient(){   return new UserClient(propertiesConfiguration.getUserClientUrl());}
 
-####4、swagger调用
+#### 4、swagger调用
 
   启动项目后，访问地址http://localhost:8080/swagger-ui.html即可。注意，如果需要swagger显示类型及参数的详细值，需要在实体类添加注解，如下：
 
